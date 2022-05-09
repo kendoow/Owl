@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+.filled svg{
+  fill: $primary;
+}
+.star svg{
+  margin-right: 5px;
+}
+.editable{
+  cursor: pointer;
+}

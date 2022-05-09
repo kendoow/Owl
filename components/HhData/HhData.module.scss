@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+.hh {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+}
+.count {
+  padding: 20px;
+  text-align: center;
+  &Value{
+    font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+color: $primary;
+  }
+}
+.salary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  text-align: center;
+  > div {
+    border-right: 1px solid $grey-light;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+.title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
