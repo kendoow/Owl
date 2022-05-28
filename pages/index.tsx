@@ -1,8 +1,9 @@
 import { GetStaticProps } from "next";
-import { Button, P, Rating } from "../components";
+import { Button, Input, P, Rating, Textarea } from "../components";
 import { withLayout } from "../layout/Layout";
 import axios from 'axios';
 import { MenuItem } from "../interfaces/menu.interface";
+
 function Home({menu}: HomeProps): JSX.Element {
   return (
     <>
@@ -12,7 +13,8 @@ function Home({menu}: HomeProps): JSX.Element {
         rating={0}
         isEditable
       />
-      
+      <Input />
+      <Textarea/>
     </>
   )
 }
